@@ -49,12 +49,17 @@ table {
 
 .main-image{
     height: 100vh;
+    width: 40vw;
+}
 
+body{
+    display: flex;
 }
 
 .left-container{
     position: relative;
     max-width: fit-content;
+    height: fit-content;
 }
 
 .stacked-text{
@@ -62,11 +67,23 @@ table {
     top: 10rem;
     color: white;
     width: 100%;
+    height: 6rem;
     background-color: rgba(0, 0, 0, 0.5);
     font-family: norse-bold;
+    text-align: center;
+    font-size: calc(min(5.49rem, 5em));
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @font-face {
     font-family: norse-bold;
     src: url(../../../../Downloads/Norse-Bold.otf);
+}
+
+.leaf-clipart{
+    /* min-height: auto; */
+    max-height: 5.49rem;
+    max-width: 5.49rem;
 }
