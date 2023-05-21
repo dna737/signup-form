@@ -143,9 +143,7 @@ form, .form-motivation{
 }
 
 form{
-    /* display: flex;
-    /* justify-content: space-between; */
-    /* flex-wrap: wrap; */ 
+    padding-bottom: 2rem;
 }
 
 .large-font{
@@ -159,7 +157,6 @@ input, label{
 input[type="text"]{
     border-radius: 0.2rem;
     box-shadow: none;
-    /* size:10px; */
     width: 200px;
     border: 1px solid #ccc;
     min-height: 1.3rem;
@@ -194,3 +191,21 @@ input.error:valid{
     border: 2px solid green;
 }
 
+.submit-or-login{
+    padding-left: 2rem;
+    padding-top: 2rem;
+    height: 100%;
+}
+
+.submit-btn{
+    background-color: #596D48;
+    color: white;
+    font-weight: bold;
+    padding: 0.8rem 1rem; 
+    border-radius: 8px;
+    display:block;
+}
+
+p.login-info{
+    margin-top: 1.8rem;
+}
