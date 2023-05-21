@@ -15,16 +15,38 @@
             <a>TEXT</a>
         </div>
 
-        <div class="cred-info"><p>Photo by <a href="https://unsplash.com/@haliewestphoto">Haile West</a> on <a href="https://unsplash.com/photos/25xggax4bSA">Unspalsh</a></p> </div>
+        <div class="cred-info"><p>Photo by <a href="https://unsplash.com/@haliewestphoto">Haile West</a> on <a href="https://unsplash.com/photos/25xggax4bSA">Unsplash</a></p> </div>
     </div>
     <div class="right-container">
-    <div class="form-description  bold">
-        <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+    <div class="form-description bold grey large-font">
+        <p>This is not a real online service! You know you need something <br> like this in your life to help you realize your deepest dreams. <br> Sign up <em>now</em> to get started.</p>
         <br>
         <p>You <em>know</em> you want to.</p>
     </div>
+    <p class="bold large-font form-motivation">Let's do this!</p>
     <form action="">
-        <!-- add "Let's do this" -->
+        <div class="first-row">
+            <div class="one-one">
+                <label for="first-name">FIRST NAME</label>
+                <input type="text" id="first-name"/>
+            </div>
+
+            <div class="one-two">
+                <label for="last-name right-label">LAST NAME</label>
+                <input type="text" id="last-name">
+            </div>
+        </div>
+
+        <div class="second-row">
+            <div class="two-one"><label for="email">EMAIL</label><input type="text" id="email"></div>
+            <div class="two-two"><label for="phone-number">PHONE NUMBER</label><input type="text" id="phone-number"></div>
+        </div>
+
+
+        <div class="third-row">
+            <div class="three-one"><label for="password">PASSWORD</label><input type="text" id="password" class="error" required></div>
+            <div class="three-two"><label for="confirm-password">CONFIRM PASSWORD</label><input type="text" id="confirm-password" class="error" required></div>
+        </div>
     </form>
     <div class="submit-or-login grey">
         <!-- <button type="submit">Create Account</button> -->
