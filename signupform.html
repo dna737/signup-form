@@ -50,9 +50,23 @@
     </form>
     <div class="submit-or-login grey">
         <!-- <button type="submit">Create Account</button> -->
+        <button type="submit" class="submit-btn">Create Account</button>
+        <p class="login-info">Already have an account? <a href="">Log in</a></p>
         
     </div>
     </div>
-
+    <script>
+        let password = document.getElementById("password");
+        let confirmPassword = document.getElementById("confirm-password");
+        if(document.activeElement === password || document.activeElement === confirmPassword){
+            if (password.value !== "" && confirmPassword.value !== "" && password.value === confirmPassword.value){
+            password.style.border = "2px solid green";
+            confirmPassword.style.border = "2px solid green";
+        }else{
+            password.style.border = "2px solid red";
+            confirmPassword.style.border = "2px solid red";
+        }
+        }
+    </script>
 </body>
 </html>
