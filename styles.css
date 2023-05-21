@@ -51,14 +51,13 @@ table {
 
 .main-image{
     height: 100vh;
-    /* flex-grow: 1; */
+    min-width: 40vw;
 }
 
 body{
     display: flex;
-    /* min-width: 2rem; */
+    /* min-width: 40%; */
     min-height: 2rem;
-    
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -103,7 +102,6 @@ em{
 }
 
 .leaf-clipart{
-    /* min-height: auto; */
     max-height: 5.49rem;
     max-width: 5.49rem;
 }
@@ -122,14 +120,77 @@ em{
 
 .form-description{
     padding-left: 2rem;
-    padding-right: 35rem;
-    font-size: larger;
+    padding-right: 3rem;
 }
 
 .form-description{
     padding-top: 6rem;
+    padding-bottom: 2rem;
 }
 
 .bold{
     font-weight: 600;
 }
+
+.grey{
+    background-color:rgba(58, 58, 58, 0.051);
+}
+
+form, .form-motivation{
+    padding-top: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 10rem;
+}
+
+form{
+    /* display: flex;
+    /* justify-content: space-between; */
+    /* flex-wrap: wrap; */ 
+}
+
+.large-font{
+    font-size: larger;
+}
+
+input, label{
+    display: block;
+}
+
+input[type="text"]{
+    border-radius: 0.2rem;
+    box-shadow: none;
+    /* size:10px; */
+    width: 200px;
+    border: 1px solid #ccc;
+    min-height: 1.3rem;
+}
+
+
+label{
+    font-size:x-small;
+    letter-spacing:0.1rem;
+    font-weight:bold;
+    margin-top: 1rem;
+}
+
+/* .right-label{
+    margin-right: 5rem;
+} */
+
+.first-row, .second-row, .third-row{
+    display: flex;
+    justify-content: space-around;
+}
+
+input:focus{
+    box-shadow:  -13px -13px 26px #bebebe,
+}
+
+input.error{
+    border: 2px solid red;
+}
+
+input.error:valid{
+    border: 2px solid green;
+}
+
